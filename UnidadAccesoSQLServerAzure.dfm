@@ -178,13 +178,11 @@ object formMSSQLAzure: TformMSSQLAzure
   object BdproyectoaConnection: TFDConnection
     Params.Strings = (
       'ConnectionDef=bdproyectoa')
-    Connected = True
     LoginPrompt = False
     Left = 256
     Top = 131
   end
   object FacturasTable: TFDQuery
-    Active = True
     Connection = BdproyectoaConnection
     SQL.Strings = (
       'SELECT * FROM bdproyectoa.dbo.facturas')

@@ -35,8 +35,23 @@ implementation
 
 procedure TformMSSQLAzure.FormCreate(Sender: TObject);
 begin
-  BdproyectoaConnection.Connected := true;
-  FacturasTable.Active := true;
+  try
+    BdproyectoaConnection.connected := false;
+    BdproyectoaConnection.Params.Clear;
+    BdproyectoaConnection.DriverName := 'MSSQL';
+    BdproyectoaConnection.Params.Database := 'bdproyectoa';
+    BdproyectoaConnection.Params.DriverID := 'MSSQL';
+    BdproyectoaConnection.Params.UserName := 'alonso';
+    // La contraseña la obtendremos de una fuente cifrada
+    // En este estudio de caso la establecemos en texto plano (NO es un mecanismo seguro)
+    BdproyectoaConnection.Params.Password := 'MiContraseña2025';
+    BdproyectoaConnection.Params.Add('Server=srvproyectoa.database.windows.net');
+    BdproyectoaConnection.Connected := true;
+    FacturasTable.Active := true;
+  except on E: Exception do
+    MessageDlg('Error al conectar al servidor de BD SQL de Azure: ' + #13#10 + #13#10 +
+      E.Message, TMsgDlgType.mtError, [TMsgDlgBtn.mbOK], 0);
+  end;
 end;
 
 end.

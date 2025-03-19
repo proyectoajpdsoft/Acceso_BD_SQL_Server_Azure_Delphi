@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{92A1A3B3-581D-4C57-9391-4448BC195241}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ProyectoAAccesoSQLServerAzure.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ProyectoAAccesoSQLServerAzure">
+        <MSBuild Projects="ProyectoAAccesoSQLServerAzure.dproj"/>
+    </Target>
+    <Target Name="ProyectoAAccesoSQLServerAzure:Clean">
+        <MSBuild Projects="ProyectoAAccesoSQLServerAzure.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProyectoAAccesoSQLServerAzure:Make">
+        <MSBuild Projects="ProyectoAAccesoSQLServerAzure.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ProyectoAAccesoSQLServerAzure"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ProyectoAAccesoSQLServerAzure:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ProyectoAAccesoSQLServerAzure:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

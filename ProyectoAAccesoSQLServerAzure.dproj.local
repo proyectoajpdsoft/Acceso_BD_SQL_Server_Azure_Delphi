@@ -3,8 +3,8 @@
 	<Transactions>
     <Transaction>2025/03/09 17:52:52.000.844,=C:\Users\mm_es_u_a\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2025/03/19 12:21:17.000.295,=C:\Users\mm_es_u_a\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2025/03/19 15:07:30.000.752,C:\Users\mm_es_u_a\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Git\Delphi\Acceso_SQL_Server_Azure_Delphi\UnidadAccesoSQLServerAzure.pas</Transaction>
-    <Transaction>2025/03/19 15:07:30.000.752,C:\Users\mm_es_u_a\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\Git\Delphi\Acceso_SQL_Server_Azure_Delphi\UnidadAccesoSQLServerAzure.dfm</Transaction>
-    <Transaction>2025/03/19 15:07:46.000.579,C:\Users\mm_es_u_a\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Git\Delphi\Acceso_SQL_Server_Azure_Delphi\ProyectoAAccesoSQLServerAzure.dproj</Transaction>
+    <Transaction>2025/03/19 15:07:30.000.752,D:\Git\Delphi\Acceso_SQL_Server_Azure_Delphi\UnidadAccesoSQLServerAzure.dfm=C:\Users\mm_es_u_a\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2025/03/19 15:07:30.000.752,D:\Git\Delphi\Acceso_SQL_Server_Azure_Delphi\UnidadAccesoSQLServerAzure.pas=C:\Users\mm_es_u_a\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/03/19 15:07:46.000.579,D:\Git\Delphi\Acceso_SQL_Server_Azure_Delphi\ProyectoAAccesoSQLServerAzure.dproj=C:\Users\mm_es_u_a\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
   </Transactions>
 </BorlandProject>

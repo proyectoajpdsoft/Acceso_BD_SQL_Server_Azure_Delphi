@@ -44,7 +44,7 @@ begin
     BdproyectoaConnection.Params.UserName := 'alonso';
     // La contraseña la obtendremos de una fuente cifrada
     // En este estudio de caso la establecemos en texto plano (NO es un mecanismo seguro)
-    BdproyectoaConnection.Params.Password := 'contraseña';
+    BdproyectoaConnection.Params.Password := 'MiContraseña2025';
     BdproyectoaConnection.Params.Add('Server=srvproyectoa.database.windows.net');
     BdproyectoaConnection.Connected := true;
     FacturasTable.Active := true;

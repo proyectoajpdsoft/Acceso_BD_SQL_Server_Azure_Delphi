@@ -19,6 +19,7 @@ type
     DataSource1: TDataSource;
     DBGrid1: TDBGrid;
     DBNavigator1: TDBNavigator;
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -31,5 +32,11 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TformMSSQLAzure.FormCreate(Sender: TObject);
+begin
+  BdproyectoaConnection.Connected := true;
+  FacturasTable.Active := true;
+end;
 
 end.

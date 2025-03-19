@@ -147,6 +147,7 @@ object formMSSQLAzure: TformMSSQLAzure
     07C3E3E00F87E0F00F0FF0701C1FF818183FFE00007FFF0001FFFFC007FF}
   Position = poScreenCenter
   ShowInTaskBar = True
+  OnCreate = FormCreate
   DesignSize = (
     624
     441)
@@ -168,7 +169,7 @@ object formMSSQLAzure: TformMSSQLAzure
   object DBNavigator1: TDBNavigator
     Left = 17
     Top = 8
-    Width = 560
+    Width = 580
     Height = 25
     DataSource = DataSource1
     Anchors = [akLeft, akTop, akRight]

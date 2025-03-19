@@ -1,2 +1,1 @@
-# Acceso_BD_SQL_Server_Azure_Delphi
- Acceso a BD SQL Server de Azure con Delphi 12
+Crear un servicio de base de datos MS SQL sin servidor en Microsoft Azure y desarrollar aplicación Windows con acceso nativo a la base de datos Azure con el IDE Delphi 12 y FireDAC. Más información en: https://proyectoa.com/crear-bd-sql-en-azure-y-acceso-desde-aplicacion-windows-con-delphi-12/
